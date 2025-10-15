@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a;
+    int b;
+    int c;
+    float sr;
+    
+    cout << "Введите число a " << endl;
+    cin >> a;
+    
+    cout << "Введите число b " << endl;
+    cin >> b;
+    
+    cout << "Введите число c " << endl;
+    cin >> c;
+    
+    sr=(a+b+c)/3.0;
+    
+    cout << "Среднее арифметическое = " <<sr;
+    
+    return 0;
+}
