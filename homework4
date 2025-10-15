@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+double a;
+
+cout << "Введите число с плавающей точкой: ";
+cin >> a;
+
+cout << " Как double: " << a << endl;
+
+int aInt = a;
+
+cout << "Как int: " << aInt << endl;
+
+bool aBool = a;
+
+cout << "Число не равно 0? " << aBool;
+
+    return 0;
+}
