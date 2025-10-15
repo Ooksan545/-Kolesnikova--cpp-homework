@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a;
+    int b;
+    
+    cout << " Введите длину: " ;
+    cin >> a;
+    
+    cout << " Введите ширину: " ;
+    cin >> b;
+    
+    int p = (a + b) * 2;
+    int s = a * b;
+    
+    cout << " Периметр: " << p << endl;
+    cout << " Площадь: " << s;
+    
+    return 0;
+}
