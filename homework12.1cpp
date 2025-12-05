@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    double width;
+    double height;
+
+public:
+    Rectangle() {
+        width = 0.0;
+        height = 0.0;
+    }
+
+    Rectangle(double w, double h) {
+        width = w;
+        height = h;
+    }
+
+    void setWidth(double w) {
+        width = w;
+    }
+
+    void setHeight(double h) {
+        height = h;
+    }
+
+    double getWidth() const {
+        return width;
+    }
+
+    double getHeight() const {
+        return height;
+    }
+
+    void show() const {
+        cout << "Ширина: " << width << endl;
+        cout << "Высота: " << height << endl;
+    }
+};
+
+int main() {
+    cout << "Программа работы с прямоугольником\n\n";
+
+    Rectangle rect;
+
+    double w, h;
+    cout << "Введите ширину прямоугольника: ";
+    cin >> w;
+    cout << "Введите высоту прямоугольника: ";
+    cin >> h;
+
+    rect.setWidth(w);
+    rect.setHeight(h);
+
+    cout << "\nИнформация о прямоугольнике:\n";
+    rect.show();
+
+    return 0;
+}
