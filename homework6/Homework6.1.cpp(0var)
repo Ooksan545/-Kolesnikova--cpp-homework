@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a[5];
+
+    cout << "Элементы массива:\n";
+
+    for (int i = 0; i < 5; i++) {
+        a[i] = rand() % 10; // случайное число от 0 до 9
+        cout << a[i] << " ";
+    }
+
+    return 0;
+}
