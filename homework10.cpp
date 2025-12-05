@@ -10,7 +10,7 @@ int main() {
         for (int j = i + 1; j < n; j++) {
             if (nums[i] + nums[j] == target) {
                 cout << i << "," << j;
-                return 0; // нашли решение, выходим
+                return 0; 
             }
         }
     }
