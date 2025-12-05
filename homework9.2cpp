@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+// функция увеличивает значение аргумента на 10
+void increase(int &x) {
+    x += 10;
+}
+
+int main() {
+    int num;
+    cout << "Введите число: ";
+    cin >> num;
+
+    increase(num);  // вызываем функцию
+
+    cout << "Новое значение: " << num;
+
+    return 0;
+}
