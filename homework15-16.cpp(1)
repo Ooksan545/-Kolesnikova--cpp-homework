@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, y;
+    cout << "Введите x: ";
+    cin >> x;
+    cout << "Введите y: ";
+    cin >> y;
+
+    double cx = 2, cy = -1, r = 5;
+
+    double dx = x - cx;
+    double dy = y - cy;
+    double d2 = dx*dx + dy*dy;
+    double r2 = r*r;
+
+    if (d2 < r2) cout << "Точка внутри окружности\n";
+    else if (d2 == r2) cout << "Точка на границе окружности\n";
+    else cout << "Точка вне окружности\n";
+
+    return 0;
+}
